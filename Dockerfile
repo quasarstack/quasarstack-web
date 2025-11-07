@@ -12,13 +12,21 @@ RUN npm run build
 FROM node:18-alpine
 WORKDIR /app
 
+# Install curl for debugging or health checks
+RUN apk add --no-cache curl
+
 COPY package*.json ./
 RUN npm install --omit=dev
 
 COPY --from=builder /app/dist ./dist
-COPY service ./service
+COPY .env ./
 
 ENV NODE_ENV=production
 ENV PORT=8080
 
-CMD ["node", "service/service.js"]
+# Run both frontend and backend
+RUN npm install -g concurrently serve
+
+CMD concurrently \
+    "serve -s dist/client -l 8080" \
+    "node dist/server/server.js"
