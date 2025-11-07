@@ -1,6 +1,6 @@
 import express from 'express';
 import cors from 'cors';
-import { sendEmail } from './src/services/emailService.js';
+import { sendEmail } from './emailService.js';
 import dotenv from 'dotenv';
 
 // Load environment variables
