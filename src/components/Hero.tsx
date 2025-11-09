@@ -37,38 +37,18 @@ const Hero = () => {
 
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/20 bg-primary/5 mb-8 animate-scale-in">
           <Sparkles className="w-4 h-4 text-primary animate-glow" />
-          <span className="text-sm font-medium">Innovation Meets Excellence</span>
+          <span className="text-sm font-medium">Innovating for People, Planet, and Progress</span>
         </div>
 
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight">
-          Transforming Ideas into{" "}
-          <span className="text-gradient">Scalable Software</span>
+        <h1 className="text-5xl md:text-6xl lg:text-8xl font-bold mb-5 leading-tight">
+          Building Future Ready Solutions{" "}
+          <span className="text-gradient">for a Better Planet</span>
         </h1>
 
         <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-12 leading-relaxed">
           Empowering businesses with cutting-edge technology solutions. From data analytics to AI automation,
           we build the future of your digital presence.
         </p>
-
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button
-            size="lg"
-            className="text-lg px-8 py-6 shadow-glow hover:shadow-glow hover:scale-105 transition-smooth group"
-            onClick={() => scrollToSection('services')}
-          >
-            Explore Services
-            <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-smooth" />
-          </Button>
-          <Button
-            size="lg"
-            variant="outline"
-            className="text-lg px-8 py-6 border-primary/30 hover:bg-primary/10 hover:border-primary hover:scale-105 transition-smooth"
-            onClick={() => scrollToSection('contact')}
-          >
-            Contact Us
-          </Button>
-        </div>
-
       </div>
     </section>
   );

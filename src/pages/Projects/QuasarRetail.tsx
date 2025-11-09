@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import inventoryGif from "@/assets/InventoryManagement.gif";
 
-interface InventoryManagementPageProps {
+interface QuasarRetailPageProps {
     title?: string;
     description?: string;
     gifSrc?: string; // relative to public/ or absolute URL
@@ -11,9 +11,9 @@ interface InventoryManagementPageProps {
     companyName?: string;
 }
 
-const InventoryManagement: React.FC<InventoryManagementPageProps> = ({
-    title = "Distributor Inventory Management System",
-    description = "A smart inventory management system for distributors that lets users upload data files, track inventory in real time, and generate interactive dashboards. It also provides automated PDF reports based on selected date ranges for quick insights and record-keeping.",
+const QuasarRetail: React.FC<QuasarRetailPageProps> = ({
+    title = "Data and Analytics",
+    description = "A smart data and analytics platform for distributors that lets users upload data files, track metrics in real time, and generate interactive dashboards. It also provides automated PDF reports based on selected date ranges for quick insights and record-keeping.",
     gifSrc = inventoryGif,
     showHeaderFooter = true,
     companyName = "QuasarStack",
@@ -69,4 +69,4 @@ const InventoryManagement: React.FC<InventoryManagementPageProps> = ({
     );
 };
 
-export default InventoryManagement;
+export default QuasarRetail;

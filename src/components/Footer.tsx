@@ -4,43 +4,22 @@ const Footer = () => {
   return (
     <footer className="py-12 px-6 border-t border-primary/10">
       <div className="container mx-auto">
-        <div className="grid md:grid-cols-4 gap-8 mb-8">
-          <div>
+        <div className="grid md:grid-cols-4 gap-8 mb-8 items-start">
+          <div className="md:col-span-3">
             <h3 className="text-xl font-bold mb-4 text-gradient">QuasarStack</h3>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-sm text-muted-foreground max-w-md">
               Transforming ideas into scalable software solutions with innovation and excellence.
             </p>
           </div>
-          
-          <div>
-            <h4 className="font-semibold mb-4">Services</h4>
+
+          <div className="text-right">
+            <h4 className="font-semibold mb-4">Get in touch</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              
-              <li className="hover:text-primary transition-smooth cursor-pointer">Web Development</li>
-              <li className="hover:text-primary transition-smooth cursor-pointer">Cloud Consulting</li>
-              <li className="hover:text-primary transition-smooth cursor-pointer">AI Automation</li>
-            </ul>
-          </div>
-          
-          <div>
-            <h4 className="font-semibold mb-4">Company</h4>
-            <ul className="space-y-2 text-sm text-muted-foreground">
-              <li className="hover:text-primary transition-smooth cursor-pointer">About Us</li>
-              <li className="hover:text-primary transition-smooth cursor-pointer">Blog</li>
-              <li className="hover:text-primary transition-smooth cursor-pointer">Contact</li>
-            </ul>
-          </div>
-          
-          <div>
-            <h4 className="font-semibold mb-4">Legal</h4>
-            <ul className="space-y-2 text-sm text-muted-foreground">
-              <li className="hover:text-primary transition-smooth cursor-pointer">Privacy Policy</li>
-              <li className="hover:text-primary transition-smooth cursor-pointer">Terms of Service</li>
-              <li className="hover:text-primary transition-smooth cursor-pointer">Cookie Policy</li>
+              <li className="hover:text-primary transition-smooth cursor-pointer"><b>Email:</b> contact.quasarstack@gmail.com</li>
             </ul>
           </div>
         </div>
-        
+
         <div className="pt-8 border-t border-primary/10 text-center text-sm text-muted-foreground">
           <p className="flex items-center justify-center gap-2">
             Made with <Heart className="w-4 h-4 text-primary fill-primary animate-glow" /> by QuasarStack
@@ -49,6 +28,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
+
   );
 };
 

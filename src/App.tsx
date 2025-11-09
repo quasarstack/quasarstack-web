@@ -5,7 +5,10 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
-import InventoryManagement from "@/pages/Projects/InventoryManagement";
+import QuasarRetail from "@/pages/Projects/QuasarRetail";
+import GreenOrbit from "@/pages/Projects/GreenOrbit";
+import QuasarForge from "@/pages/Projects/QuasarForge";
+import QuasarLearn from "@/pages/Projects/QuasarLearn";
 
 const queryClient = new QueryClient();
 
@@ -17,7 +20,10 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/inventory-management" element={<InventoryManagement />} />
+          <Route path="/QuasarRetail" element={<QuasarRetail />} />
+          <Route path="/QuasarLearn" element={<QuasarLearn />} />
+          <Route path="/QuasarForge" element={<QuasarForge />} />
+          <Route path="/GreenOrbit" element={<GreenOrbit />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
