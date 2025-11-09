@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Code, Cloud, Brain } from "lucide-react";
 
+
 const Services = () => {
   const services = [
     {
@@ -51,11 +52,11 @@ const Services = () => {
               <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mb-6 group-hover:shadow-glow transition-smooth">
                 <service.icon className="w-8 h-8 text-primary group-hover:scale-110 transition-smooth" />
               </div>
-              
+
               <h3 className="text-2xl font-bold mb-4 group-hover:text-primary transition-smooth">
                 {service.title}
               </h3>
-              
+
               <p className="text-muted-foreground mb-6 leading-relaxed">
                 {service.description}
               </p>
