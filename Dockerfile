@@ -2,31 +2,30 @@
 FROM node:18-alpine AS builder
 WORKDIR /app
 
+# Copy package.json and install dependencies
 COPY package*.json ./
 RUN npm install
 
+# Copy all files and build the app
 COPY . .
+# Clean dist, build, and copy assets/env into dist
 RUN npm run build
 
-# ---------- Run stage ----------
+# ---------- Production stage ----------
 FROM node:18-alpine
 WORKDIR /app
 
-# Install curl for debugging or health checks
-RUN apk add --no-cache curl
+# Install serve for serving the built app
+RUN npm install -g serve
 
-COPY package*.json ./
-RUN npm install --omit=dev
-
+# Copy only necessary files from builder
 COPY --from=builder /app/dist ./dist
-COPY .env ./
+COPY --from=builder /app/.env ./
 
+# Expose port
 ENV NODE_ENV=production
 ENV PORT=8080
+EXPOSE 8080
 
-# Run both frontend and backend
-RUN npm install -g concurrently serve
-
-CMD concurrently \
-    "serve -s dist/client -l 8080" \
-    "node dist/server/server.js"
+# Run the built app
+CMD ["serve", "-s", "dist", "-l", "8080"]

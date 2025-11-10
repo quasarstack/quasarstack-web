@@ -1,73 +1,53 @@
-# Welcome to your Lovable project
+# 🏠 Quasarstack Home
 
-## Project info
+A modern full-stack web application built with **Vite**, **React**, **TypeScript**, and **Tailwind CSS**, enhanced with **shadcn/ui** and **Radix UI** components.  
+This project integrates both a **client** (frontend) and a **server** (backend) for seamless development and deployment.
 
-**URL**: https://lovable.dev/projects/21e15f8e-d85c-41b0-9dde-c5f213cffab0
+---
 
-## How can I edit this code?
+## 🌐 Project Info
 
-There are several ways of editing your application.
+**Lovable Project:** [View on Lovable.dev](https://lovable.dev/projects/21e15f8e-d85c-41b0-9dde-c5f213cffab0)
 
-**Use Lovable**
+You can develop, preview, and deploy directly through Lovable or work locally using your preferred environment.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/21e15f8e-d85c-41b0-9dde-c5f213cffab0) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## ⚙️ Tech Stack
 
-**Use your preferred IDE**
+### 🧩 Frontend
+- ⚡ [Vite](https://vitejs.dev) — Fast and optimized build tool  
+- ⚛️ [React 18](https://react.dev) with [TypeScript](https://www.typescriptlang.org/)  
+- 💅 [Tailwind CSS](https://tailwindcss.com) with [shadcn/ui](https://ui.shadcn.com)  
+- 🧭 [React Router DOM](https://reactrouter.com) for routing  
+- 🎨 [Lucide React](https://lucide.dev) for icons  
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### 🧠 Backend
+- 🚀 [Express 5](https://expressjs.com) server  
+- 🌍 [dotenv](https://www.npmjs.com/package/dotenv) for environment configuration  
+- ✉️ [Nodemailer](https://nodemailer.com) for email services  
+- 🔒 [CORS](https://www.npmjs.com/package/cors) enabled  
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### ⚙️ Developer Tools
+- 🧹 [ESLint](https://eslint.org) + [TypeScript ESLint](https://typescript-eslint.io)  
+- 🔁 [Nodemon](https://nodemon.io) for live server reload  
+- 🧩 [Concurrently](https://www.npmjs.com/package/concurrently) for running multiple scripts  
+- 🐳 Docker support for production and dev environments  
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 🧱 Installation & Setup
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+```bash
+npm install
 
-# Step 3: Install the necessary dependencies.
-npm i
+npm run build
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
 npm run dev
-```
 
-**Edit a file directly in GitHub**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
 
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/21e15f8e-d85c-41b0-9dde-c5f213cffab0) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+### 1️⃣ Clone the Repository
+```bash
+git clone <YOUR_GIT_URL>
+cd quasarstack-home

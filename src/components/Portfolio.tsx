@@ -1,6 +1,4 @@
 import { Card } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { ExternalLink } from "lucide-react";
 import {
   Code2,          // Web & App Development
   CloudCog,       // Cloud & DevOps Consulting
@@ -8,14 +6,17 @@ import {
   GraduationCap,  // Edu-Tech
   Leaf,           // GreenOrbit
 } from "lucide-react";
-
+import QuasarRetail from "@/assets/QuasarRetail.png";
+import QuasarForge from "@/assets/QuasarForge.png";
+import QuasarLearn from "@/assets/QuasarLearn.png";
+import GreenOrbit from "@/assets/greenOrbit.png";
 
 const Portfolio = () => {
   const projects = [
     {
       category: "Data and Analytics",
       projectName: "QuasarRetail",
-      image: 'src/assets/QuasarRetail.png',
+      image: QuasarRetail,
       description:
         "Web-based platform for distributors to upload and process Excel files, manage inventory levels, update job data, and generate automated performance reports. Built for scalability and easy integration with government data systems.",
       icon: Code2,
@@ -24,7 +25,7 @@ const Portfolio = () => {
     {
       category: "Cloud-Native Development Platform",
       projectName: "QuasarForge",
-      image: 'src/assets/QuasarForge.png',
+      image: QuasarForge,
       description:
         "Digital Agriculture Scheme Portal — a comprehensive platform for managing government agriculture schemes, beneficiary registration, and tracking.",
       icon: CloudCog,
@@ -33,7 +34,7 @@ const Portfolio = () => {
     {
       category: "Edu-Tech",
       projectName: "QuasarLearn",
-      image: 'src/assets/QuasarLearn.png',
+      image: QuasarLearn,
       description: "Making knowledge accessible for everyone through open learning solutions.",
       icon: GraduationCap,
       pagePath: "/QuasarLearn"
@@ -41,7 +42,7 @@ const Portfolio = () => {
     {
       category: "AgriTech",
       projectName: "GreenOrbit",
-      image: 'src/assets/greenOrbit.png',
+      image: GreenOrbit,
       description:
         "Modern SaaS platform for farmers to digitize the organic farming process — from internal control systems to reports and certification management.",
       icon: Leaf,
